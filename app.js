@@ -17,7 +17,7 @@ res.status(200).send(items);
   
 })
 app.post ('/api/items' , (req , res)=>{
-	item.push({imgurl :req.body.imgurl,
+	items.push({imgurl :req.body.imgurl,
 		name : req.body.name,
 		price: req.body.price});
 		res.status(200).send('\n A new item has been added');
